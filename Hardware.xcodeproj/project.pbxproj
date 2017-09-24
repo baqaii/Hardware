@@ -14,6 +14,7 @@
 		DEA85D721F76CE1700A7C537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA85D701F76CE1700A7C537 /* LaunchScreen.storyboard */; };
 		DEA85D7D1F76CE1700A7C537 /* HardwareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA85D7C1F76CE1700A7C537 /* HardwareTests.swift */; };
 		DEA85D881F76CE1700A7C537 /* HardwareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA85D871F76CE1700A7C537 /* HardwareUITests.swift */; };
+		DEA85D961F76CE2300A7C537 /* Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA85D951F76CE2300A7C537 /* Hardware.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DEA85D831F76CE1700A7C537 /* HardwareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HardwareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA85D871F76CE1700A7C537 /* HardwareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareUITests.swift; sourceTree = "<group>"; };
 		DEA85D891F76CE1700A7C537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA85D951F76CE2300A7C537 /* Hardware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hardware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				DEA85D671F76CE1700A7C537 /* AppDelegate.swift */,
 				DEA85D691F76CE1700A7C537 /* ViewController.swift */,
+				DEA85D951F76CE2300A7C537 /* Hardware.swift */,
 				DEA85D6B1F76CE1700A7C537 /* Main.storyboard */,
 				DEA85D6E1F76CE1700A7C537 /* Assets.xcassets */,
 				DEA85D701F76CE1700A7C537 /* LaunchScreen.storyboard */,
@@ -193,8 +196,7 @@
 				TargetAttributes = {
 					DEA85D631F76CE1700A7C537 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = QCU9R923EQ;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					DEA85D771F76CE1700A7C537 = {
 						CreatedOnToolsVersion = 8.3;
@@ -262,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA85D961F76CE2300A7C537 /* Hardware.swift in Sources */,
 				DEA85D6A1F76CE1700A7C537 /* ViewController.swift in Sources */,
 				DEA85D681F76CE1700A7C537 /* AppDelegate.swift in Sources */,
 			);
@@ -417,11 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QCU9R923EQ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Hardware/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = daniIsOneInfiniteLoop.Hardware;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -430,11 +435,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QCU9R923EQ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Hardware/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = daniIsOneInfiniteLoop.Hardware;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
